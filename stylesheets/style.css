@@ -1,17 +1,17 @@
 * {
-background-color: lightblue;
+  background-color: lightblue;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
 
-font-weight: bold;
-text-align: center;
+  font-weight: bold;
+  text-align: center;
 
   font-family: "Licorice", cursive;
   font-weight: 400;
   font-style: normal;
- 
+
 }
 
 #photo {
@@ -27,34 +27,50 @@ text-align: center;
 
 footer p {
 
-   text-align: right;
-   font-style: italic;
+  text-align: right;
+  font-style: italic;
+
+  /*Este selector aplica a todos los <ul> dentro de <nav>, sin importar cuántos niveles de anidación haya entre ellos.
+
+Afectará cualquier <ul> dentro de un <nav>, ya sea directo o no.*/
 
 }
 
 
-nav > ul {
+nav>ul {
 
-    /* Eliminar los estilos de lista predeterminados */
-    list-style: none;
+  /* Eliminar los estilos de lista predeterminados */
+  /*Este selector solo afectará a los elementos <ul> que sean hijos inmediatos de un <nav>.
+
+  No afecta a <ul> que estén dentro de otros elementos dentro de <nav>, como <div>, <section>,*/
+  list-style: none;
 
 }
 
 section {
 
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd;
+  /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+  border: 0.2pt solid #cedddd;
 
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px;
+  /* margen (espacio externo) superior, derecho, abajo e izquierda */
+  margin: 8px 2px 8px 2px;
 
-    /* relleno (espacio interno) de
+  /* relleno (espacio interno) de
     1.5% en la parte superior e inferior y
     0.8% a los lados derecho e izquierdo. */
 
-    padding: 1.5% 0.8%;
+  padding: 1.5% 0.8%;
 
-    /* Margen inferior ajustado */
-    margin-bottom: 1.2rem;
+  /* Margen inferior ajustado */
+  margin-bottom: 1.2rem;
+
+   border-radius: 5px;
+  -webkit-border-radiu: 5px;
+  -moz-border-radius: 5px;
+  
+
+   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 
 }

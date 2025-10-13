@@ -3,60 +3,60 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheets/style.css"
     <title>Mi Currículum Vitae</title>
+    <link rel="stylesheet" href="stylesheets/style.css" >
 </head>
 
 <body>
     <header>
         <h1>Josué Esparza</h1>
-        <p>Estudiante</p>
+        <h2> Estudiante Universitario</h2>
+
+
+        <nav>
+            <ol>
+                <li><a href="#perfil">Resumen</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ol>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#testimonios">Testimonios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+
 
     <main>
-       <!-- Resumen -->
-<section id="resumen">
-    <h2 class= "subtitle">Resumen</h2>
-    <img id= "photo" src="tu-foto.jpg" alt="Foto de Josué Esparza" width="150" />
-    <p>Estudiante apasionado por la tecnología y el desarrollo web. Puedes visitar mi portafolio en
-        <a href="https://miportafolio.com" target="_blank" rel="noopener noreferrer">mi sitio web</a>.
-    </p>
-    <!-- Video de YouTube embebido -->
-    <iframe width="320" height="240" 
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-        title="Video de presentación" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-</section>
+        <!-- Resumen -->
+        <section id="perfil">
+            <h2 class="subtitle">Perfil</h2>
 
-        <!-- Experiencia -->
-        <section id="experiencia">
-           <h2 class= "subtitle">Experiencia</h2>
-            <ol>
-                <li>Obtuve mi título universitario en 2022.</li>
-                <li>Realicé una pasantía en desarrollo web.</li>
-                <li>Desarrollé un proyecto freelance para una startup.</li>
-            </ol>
+            <figure>
+                <img id="photo" src="https://picsum.photos/300/200" alt="Foto de perfil de prueba">
+                <figcaption>Foto de perfil (placeholder temporal)</figcaption>
+            </figure>
+
+            <p>Estudiante apasionado por la tecnología y el desarrollo web. Puedes visitar mis proyectos en mi pagina de
+                <a href="https://github.com/Jaesparz?tab=repositories" target="_blank"
+                    rel="noopener noreferrer">github</a>.
+            </p>
+
+            <h2 class="subtitle">Sobre mi</h2>
+
+            <!-- Video de YouTube embebido -->
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Video de presentación" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </section>
+
 
         <!-- Educación -->
         <section id="educacion">
-            <h2 class= "subtitle">Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <ul>
                 <li>Licenciatura en Ingeniería en Sistemas Computacionales</li>
                 <li>Curso de Desarrollo Web Fullstack</li>
@@ -66,7 +66,7 @@
 
         <!-- Habilidades -->
         <section id="habilidades">
-             <h2 class= "subtitle">Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <table>
                 <thead>
                     <tr>
@@ -102,57 +102,64 @@
 
         <!-- Proyectos -->
         <section id="proyectos">
-            <h2 class= "subtitle">Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
             <p>Proyecto destacado: Aplicación web de gestión de tareas.</p>
             <img src="captura-proyecto.jpg" alt="Captura del proyecto de tareas" width="300" />
         </section>
 
         <!-- Testimonios -->
         <section id="testimonios">
-             <h2 class= "subtitle">Testimonios</h2>
+            <h2 class="subtitle">Testimonios</h2>
 
             <article>
-                <blockquote>
-                    “Josué demostró una gran capacidad para resolver problemas bajo presión. Siempre fue proactivo y
-                    detallista en cada proyecto.”
-                </blockquote>
+
                 <p><strong>María Rodríguez</strong><br />
                     Gerente de Proyectos en Innovatech<br />
                     Trabajamos juntos en el desarrollo de una plataforma educativa durante 6 meses. Su dedicación y
                     habilidades técnicas fueron clave para el éxito del proyecto.</p>
+
+                <blockquote>
+                    “Josué demostró una gran capacidad para resolver problemas bajo presión. Siempre fue proactivo y
+                    detallista en cada proyecto.”
+                </blockquote>
             </article>
 
             <article>
-                <blockquote>
-                    “Destaco su compromiso y actitud positiva. Josué aportó soluciones creativas que mejoraron
-                    significativamente el flujo de trabajo.”
-                </blockquote>
+
                 <p><strong>Carlos Méndez</strong><br />
                     Líder Técnico en DevSolutions<br />
                     Fue parte del equipo de desarrollo web en una startup donde sobresalió por su responsabilidad y
                     comunicación efectiva.</p>
+
+                <blockquote>
+                    “Destaco su compromiso y actitud positiva. Josué aportó soluciones creativas que mejoraron
+                    significativamente el flujo de trabajo.”
+                </blockquote>
+
             </article>
 
             <article>
-                <blockquote>
-                    “Tiene una gran capacidad de adaptación y aprendizaje. Fue un gran soporte en tareas complejas con
-                    tecnologías nuevas.”
-                </blockquote>
+
                 <p><strong>Laura Fernández</strong><br />
                     Coordinadora de TI en Edusoft<br />
                     Josué colaboró en la implementación de un sistema de gestión escolar. Fue fundamental en la etapa de
                     pruebas y despliegue.</p>
+
+                <blockquote>
+                    “Tiene una gran capacidad de adaptación y aprendizaje. Fue un gran soporte en tareas complejas con
+                    tecnologías nuevas.”
+                </blockquote>
             </article>
         </section>
 
         <!-- Contacto -->
         <section id="contacto">
-             <h2 class= "subtitle">Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
 
             <form action="mailto: jaesparz@espol.edu.ec" method="post" enctype="text/plain">
-             
+
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required /> 
+                <input type="text" id="nombre" name="nombre" required />
 
                 <label for="email">Correo:</label>
                 <input type="email" id="email" name="email" required />
@@ -165,8 +172,8 @@
 
             <h3>Mi ubicación (Ciudad, País)</h3>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.703131324001!2d-103.34960978478136!3d20.659698604450742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18574cf95e1%3A0x5d63d02f2232c7c!2sGuadalajara%2C%20Jalisco!5e0!3m2!1ses!2smx!4v1693505064739!5m2!1ses!2smx"
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1993.511719120504!2d-79.9690763603272!3d-2.144707999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMDgnNDAuOSJTIDc5wrA1OCcwMy44Ilc!5e0!3m2!1ses-419!2sec!4v1760035962352!5m2!1ses-419!2sec" "
+                width=" 60%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 
