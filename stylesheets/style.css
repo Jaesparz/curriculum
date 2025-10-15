@@ -1,6 +1,24 @@
 * {
-  background-color: whitesmoke;
+  background-color: #fef6e4;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+
+  color: #001858;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+}
+
+ ul li {
+
+
+  color: #001858;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+
 }
 
 h1 {
@@ -8,20 +26,73 @@ h1 {
   font-weight: bold;
   text-align: center;
 
-  font-family: "Licorice", cursive;
-  font-weight: 400;
+  font-family: "Arvo", serif;
+  font-weight: 750;
   font-style: normal;
+  color: #001858;
 
 }
 
+#perfil {
+  text-align: center;
+}
+
+
+#ocupacion {
+
+  font-weight: 500;
+  text-align: center;
+  color: #001858;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  margin-bottom: 60px;
+
+}
+
+h3{
+   font-weight: 500;
+  color: #001858;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  margin-top : 60px;
+}
+
+
+
+.sect {
+  text-align: center;
+}
+
+
 #photo {
+  text-align: center;
   width: 8vw;
   height: auto;
+
+}
+
+#edlist {
+
+  color: #001858;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
 }
 
 .subtitle {
-  color: rgb(151 156 165 / 0.89);
+
   text-transform: uppercase;
+  font-family: "Arvo", serif;
+  font-weight: 750;
+  font-style: normal;
+  color: #001858;
+  padding-bottom: 10px;
 }
 
 
@@ -30,46 +101,68 @@ footer p {
   text-align: right;
   font-style: italic;
 
-  /*Este selector aplica a todos los <ul> dentro de <nav>, sin importar cuántos niveles de anidación haya entre ellos.
+ 
 
-Afectará cualquier <ul> dentro de un <nav>, ya sea directo o no.*/
-
+}
+#proyectos a {
+    color: #3498db; 
+    text-decoration: none; 
 }
 
 
+#proyectos a:hover {
+    color: #2c3e50;   
+    text-decoration: underline; 
+}
+
+
+nav {
+
+  border-top: 1pt solid #f582ae;
+
+  background: #f582ae;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0a285f;
+  font-weight: 600;
+  padding: .35rem .5rem;
+  border-radius: .35rem;
+
+}
+
+nav a:hover {
+  background: #eef3ff;
+  text-decoration: underline;
+}
+
 nav>ol {
 
-  /* Eliminar los estilos de lista predeterminados */
-  /*Este selector solo afectará a los elementos <ul> que sean hijos inmediatos de un <nav>.
 
-  No afecta a <ul> que estén dentro de otros elementos dentro de <nav>, como <div>, <section>,*/
   list-style: none;
+
 
 
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-   gap: 1rem;
+  gap: 1rem;
+  background: #fffdf4;
 
 }
 
 section {
 
-  /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+
   border: 0.2pt solid #cedddd;
-
-  /* margen (espacio externo) superior, derecho, abajo e izquierda */
   margin: 8px 2px 8px 2px;
-
-  /* relleno (espacio interno) de
-    1.5% en la parte superior e inferior y
-    0.8% a los lados derecho e izquierdo. */
-
   padding: 1.5% 0.8%;
-
-  /* Margen inferior ajustado */
   margin-bottom: 1.2rem;
+
+
+
 
   border-radius: 5px;
   -webkit-border-radiu: 5px;
@@ -80,71 +173,129 @@ section {
   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 
-}
 
-section > form {
-
-  display: grid;               /* Activa Grid Layout */
-  grid-template-columns: 1fr;  /* Una sola columna que ocupa todo el ancho */
-  row-gap: 1rem;               /* Espacio entre filas (vertical) */
-  column-gap: 1rem;            /* Espacio entre columnas (horizontal) */
 
 }
-section > form input {
-  width: 300px;       /* O el ancho que desees */
-  justify-self: start; /* Opcional: alinea el input a la izquierda dentro de la celda de grid */
+
+
+
+section>form label {
+
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 600;
+  color: #172c66;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
 }
 
-section > form textarea {
-  width: 300px;       /* O el ancho que desees */
-  justify-self: start; /* Opcional: alinea el input a la izquierda dentro de la celda de grid */
+section>form {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  
+
 }
 
-section > form button {
+section>form input {
+  width: 300px;
 
+  justify-self: start;
+  
+}
+
+section>form textarea {
   width: 300px;
   justify-self: start;
 }
 
+section>form button {
+
+  width: 300px;
+  justify-self: start;
+
+  background-color: #f582ae;
+
+  font-style: italic;
+  color: #001858;
+  font-weight: bold;
+  font-weight: 4000;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+
+  color: #001858;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+}
+
+th {
+  border: 4px solid #ddd;
+  padding: 8px;
+  text-align: left;
+
+  font-weight: bold;
+
+
+}
+
+td {
+
+  border: 4px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
 
 
 #testimonios {
 
-     /* Activa el modelo Flexbox */
-     display: flex;
 
-     /* Permite que los hijos pasen a la siguiente línea si no caben */
-     flex-wrap: wrap;
+  display: flex;
 
-     /* Espaciado uniforme entre filas y columnas */
-     gap: 1rem;
+  flex-wrap: wrap;
+
+  gap: 1rem;
 
 }
 
-#testimonios > h2 {
+#testimonios>h2 {
 
-     /* Hace que el subtítulo ocupe el 100% del ancho del contenedor */
-     flex: 0 0 100%;
+  flex: 0 0 100%;
+
+}
+
+#testimonios>article {
+  flex: 1 1 calc(33.333% - 1rem);
 
 }
 
-#testimonios > article {
 
-     /* Distribuye equitativamente los artículos en tres columnas */
-     flex: 1 1 calc(33.333% - 1rem);
 
-}
 
 blockquote {
-  margin: 0; /* elimina márgenes por defecto */
-  padding: 0; /* elimina paddings por defecto */
+  margin: 0;
+
+  padding: 0;
+
 }
+
+
+
+
+
+
 
 
 
 /*etiquetas inline : span, strong, label, input,ul,li
 /*etiqueta de bloque : section, figure,img,h1-h6,p
-
-
-
-

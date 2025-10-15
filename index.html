@@ -5,18 +5,31 @@
     <meta charset="UTF-8" />
     <title>Mi Currículum Vitae</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Josué Esparza</h1>
-        <h2> Estudiante Universitario</h2>
+        <h2 id="ocupacion"> Estudiante Universitario</h2>
 
 
         <nav>
             <ol>
                 <li><a href="#perfil">Resumen</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -27,13 +40,13 @@
     </header>
 
     <main>
-        <!-- Resumen -->
+
         <section id="perfil">
             <h2 class="subtitle">Perfil</h2>
 
             <figure>
-                <img id="photo" src="https://picsum.photos/300/200" alt="Foto de perfil de prueba">
-                <figcaption>Foto de perfil (placeholder temporal)</figcaption>
+                <img id="photo" src="https://i.ibb.co/ktCFx32/foto-de-perfil.jpg" alt="Foto de perfil de prueba">
+                <figcaption><em>Josue Esparza</em></figcaption>
             </figure>
 
             <p>Estudiante apasionado por la tecnología y el desarrollo web. Puedes visitar mis proyectos en mi pagina de
@@ -41,28 +54,33 @@
                     rel="noopener noreferrer">github</a>.
             </p>
 
+        </section>
+
+        <section id="sobremi">
+
             <h2 class="subtitle">Sobre mi</h2>
 
-            <!-- Video de YouTube embebido -->
-            <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+
+            <iframe width="600" height="300" src="https://www.youtube.com/embed/gOo3S24Y9po"
                 title="Video de presentación" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
+            <p>Video Introductorio (de ejemplo, un video cualquiera)</p>
         </section>
 
 
-        <!-- Educación -->
+
         <section id="educacion">
             <h2 class="subtitle">Educación</h2>
-            <ul>
-                <li>Licenciatura en Ingeniería en Sistemas Computacionales</li>
-                <li>Curso de Desarrollo Web Fullstack</li>
-                <li>Certificación en JavaScript Avanzado</li>
+            <ul id="edlist">
+                <li>Estudiante de Computacion de la ESPOL</li>
+                <li>Curso de Desarrollo Web Backend Udemy</li>
+                <li>Bootcamp Backend Engineering Globant 2024</li>
             </ul>
         </section>
 
-        <!-- Habilidades -->
+
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
             <table>
@@ -70,42 +88,103 @@
                     <tr>
                         <th>Habilidad</th>
                         <th>Nivel</th>
-                        <th>Años de experiencia</th>
+                        <th>Fuerte</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th>HTML5</th>
-                        <td>Avanzado</td>
-                        <td>3</td>
+                        <td>Principiante</td>
+                        <td>Desarrollo web</td>
                     </tr>
                     <tr>
                         <th>CSS3</th>
-                        <td>Avanzado</td>
-                        <td>3</td>
+                        <td>Principiante</td>
+                        <td>Desarrollo Web</td>
                     </tr>
                     <tr>
                         <th>JavaScript</th>
-                        <td>Intermedio</td>
-                        <td>2</td>
+                        <td>Principante</td>
+                        <td>Desarrollo Web</td>
                     </tr>
                     <tr>
                         <th>Inglés</th>
                         <td>Intermedio</td>
-                        <td>5</td>
+                        <td>Capacidad de entender correctamente el idioma y hablarlo</td>
+                    </tr>
+
+                    <tr>
+                        <th>Java</th>
+                        <td>Avanzado</td>
+                        <td>Desarrollo de aplicaciones moviles</td>
+                    </tr>
+
+                    <tr>
+                        <th>Python</th>
+                        <td>Intermedio</td>
+                        <td>Automatizacion de Tareas</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- Proyectos -->
+
         <section id="proyectos">
             <h2 class="subtitle">Proyectos</h2>
-            <p>Proyecto destacado: Aplicación web de gestión de tareas.</p>
-            <img src="captura-proyecto.jpg" alt="Captura del proyecto de tareas" width="300" />
+            <h3>-Proyecto 1: <a href="https://github.com/Jaesparz/BootcampProjectJE">Crypto-Exchange System</a> </h3>
+            <p><strong>Descripcion: </strong> Aplicación que simula un sistema real de intercambio de criptomonedas,
+                donde los usuarios pueden comprar y vender activos digitales con personas "reales" dentro de la
+                simulación.
+
+                Incluye:
+
+            <ul>
+                <li>Cartera digital interactiva para gestionar los activos. </li>
+                <li> Sistema de oferta y demanda que regula las transacciones.</li>
+                <li> Módulo de espera en compras/ventas, imitando un mercado real.</li>
+                <li> Login con autenticación de usuarios.</li>
+                <li> Historial de operaciones con registro de compras y ventas.</li>
+            </ul>
+
+            </p>
+            <p> <strong>Tecnologías utilizadas: </strong>
+                Java → Uso de librerías estándar como util y math.</p>
+            <p> <strong>Estado: </strong>
+                Completado</p>
+
+
+
+            <h3>-Proyecto 2: <a href="https://github.com/Jaesparz/DM-PROJECT">Discrete Paths</a> </h3>
+            <p><strong>Descripcion: </strong> Aplicación diseñada para aplicar el algoritmo de Dijkstra en un mapa
+                interactivo.
+
+                Modos de uso:
+
+            <ul>
+                <li>Simulación en mapa real: Con la API de OSRM y un mapa de Guayaquil (ESPOL), el usuario puede
+                    seleccionar inicio y destino para calcular el camino más corto. Incluye un asistente virtual llamado
+                    Polito.</li>
+                <li> Modo de juego: Un pirata debe encontrar el camino más corto en un grafo para obtener el tesoro
+                    antes de que lo roben.</li>
+
+            </ul>
+
+            </p>
+            <p> <strong>Tecnologías utilizadas: </strong>
+            <ul>
+                <li>Java → Implementación principal del algoritmo y lógica.</li>
+                <li> API REST OSRM → Cálculo de rutas óptimas en formato GeoJSON.</li>
+                <li>Librerías os y graphics → Integración gráfica del mapa y del juego.</li>
+
+            </ul>
+            </p>
+            <p> <strong>Estado: </strong>
+                Completado</p>
+
+
+           
         </section>
 
-        <!-- Testimonios -->
         <section id="testimonios">
             <h2 class="subtitle">Testimonios</h2>
 
@@ -115,14 +194,15 @@
             <article>
 
                 <blockquote>
-                    “Josué demostró una gran capacidad para resolver problemas bajo presión. Siempre fue proactivo y
-                    detallista en cada proyecto.”
+                    “Josué demuestra un talento excepcional para la programación y una gran capacidad analítica al
+                    resolver problemas complejos.”
                 </blockquote>
 
-                <p><strong>María Rodríguez</strong><br />
-                    Gerente de Proyectos en Innovatech<br />
-                    Trabajamos juntos en el desarrollo de una plataforma educativa durante 6 meses. Su dedicación y
-                    habilidades técnicas fueron clave para el éxito del proyecto.</p>
+                <p><strong>Steven Santillán</strong><br />
+                    <em>Docente en ESPOL-Docente de Estructuras de Datos</em><br />
+                    He tenido el gusto de tener a Josué como estudiante, y desde el inicio destacó por su disciplina y
+                    habilidad para aplicar los conceptos teóricos en proyectos prácticos. 
+                </p>
 
 
             </article>
@@ -130,15 +210,14 @@
             <article>
 
                 <blockquote>
-                    “Destaco su compromiso y actitud positiva. Josué aportó soluciones creativas que mejoraron
-                    significativamente el flujo de trabajo.”
+                    Josué posee una gran habilidad para optimizar código con una eficiencia admirable.”
                 </blockquote>
 
-                <p><strong>Carlos Méndez</strong><br />
-                    Líder Técnico en DevSolutions<br />
-                    Fue parte del equipo de desarrollo web en una startup donde sobresalió por su responsabilidad y
-                    comunicación efectiva.</p>
-
+                <p><strong>Jaren Álvarez</strong><br />
+                    <em>Estudiante de ingeniería eléctrica</em><br />
+                    Josué me apoyó en la realización de un programa para un proyecto universitario y de no ser por su
+                    ayuda habría fracasado.
+                </p>
 
 
             </article>
@@ -146,20 +225,19 @@
             <article>
 
                 <blockquote>
-                    “Tiene una gran capacidad de adaptación y aprendizaje. Fue un gran soporte en tareas complejas con
-                    tecnologías nuevas.”
+                    “Me sorprendió su capacidad para detectar errores rápidamente dentro de un código y corregirlos.”
                 </blockquote>
 
-                <p><strong>Laura Fernández</strong><br />
-                    Coordinadora de TI en Edusoft<br />
-                    Josué colaboró en la implementación de un sistema de gestión escolar. Fue fundamental en la etapa de
-                    pruebas y despliegue.</p>
+                <p><strong>William Maurad </strong><br />
+                    <em>Dueño de Alpha Gym</em><br />
+                    Josué se ofreció a modificar para bien un programa de administración de clientes hecho para mí
+                    gimnasio.
+                </p>
 
 
             </article>
         </section>
 
-        <!-- Contacto -->
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
 
@@ -177,19 +255,23 @@
                 <button>Enviar</button>
             </form>
 
+        </section>
 
-            <h3>Mi ubicación (Ciudad, País)</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1993.511719120504!2d-79.9690763603272!3d-2.144707999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMDgnNDAuOSJTIDc5wrA1OCcwMy44Ilc!5e0!3m2!1ses-419!2sec!4v1760035962352!5m2!1ses-419!2sec" "
-                width=" 60%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section id="ubicacion">
+
+            <h2 class="subtitle">Mi ubicación</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1993.511719120504!2d-79.9690763603272!3d-2.144707999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMDgnNDAuOSJTIDc5wrA1OCcwMy44Ilc!5e0!3m2!1ses-419!2sec!4v1760035962352!5m2!1ses-419!2sec" "
+                width=" 60%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
         </section>
     </main>
 
     <footer>
         <p>© Josué Esparza - 2025</p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
+         
+            <li><a href="https://github.com/Jaesparz">GitHub</a></li>
         </ul>
     </footer>
 </body>
